@@ -94,17 +94,17 @@ console.log(greetUser("Alice", 23));
 
 //9.The fizzbuzz checker
 function FizzBuzz(number) {
-  if (number % 3 == 0) {
-    return "Fizz";
-  } else if (number % 5 == 0) {
-    return "Buzz";
-  } else if (number % 3 == 0 && number % 5 == 0) {
+  if (number % 3 == 0 && number % 5 == 0) {
     return "FizzBuzz";
-  } else {
-    return `${number}`;
+  }
+  if (number % 5 == 0) {
+    return "Buzz";
+  }
+  if (number % 3 == 0) {
+    return "fizz";
   }
 }
-console.log(FizzBuzz(7));
+console.log(FizzBuzz(3));
 
 //10.Perimeter2 of circle and Squire
 function perimeter2(letter, num) {
@@ -114,7 +114,7 @@ function perimeter2(letter, num) {
     case "c":
       return 6.28 * num;
     default:
-      return "no leter entered";
+      return "no letter entered";
   }
 }
 console.log(perimeter2("s", 4));
@@ -148,18 +148,14 @@ console.log(factorial(4));
 
 //14.multiple of sum ,returns sum of all numbers
 function sumMutiples(n, divisor) {
-    let sum=0;
-    for(let i=1;i<=n;i++){
-        if(n%divisor == 0)
-        {
-            sum+=i;
-             
-        }
-      
-
+  let sum = 0;
+  for (let i = 1; i <= n; i++) {
+    if (n % divisor == 0) {
+      sum += i;
     }
-     return sum;
+  }
+  return sum;
 }
-console.log(sumMutiples(5,3));
+console.log(sumMutiples(5, 3));
 //15 .sum of digits
 function sumDigits(num) {}
