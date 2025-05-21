@@ -86,11 +86,11 @@ function greetUser(name, hour) {
     return `Good Afternoon,${name}`;
   } else if (hour >= 18 && hour <= 21) {
     return `Good evening,${name}`;
-  } else if (hour >= 22 && hour <= 24) {
+  } else if ((hour >= 22 && hour <= 23) || (hour >= 0 && hour <= 4)) {
     return `Good night,${name}`;
   }
 }
-console.log(greetUser("Alice", 23));
+console.log(greetUser("Alice"));
 
 //9.The fizzbuzz checker
 function FizzBuzz(number) {
@@ -157,5 +157,29 @@ function sumMutiples(n, divisor) {
   return sum;
 }
 console.log(sumMutiples(5, 3));
+
 //15 .sum of digits
-function sumDigits(num) {}
+function sumDigits(num) {
+  let sum = 0;
+  while (num > 0) {
+    sum += num % 10;
+    num = Math.floor(num / 10);
+  }
+  return sum;
+}
+console.log(sumDigits(123));
+
+// function add(num){
+//   let sum=0;
+//   if(num>0)
+
+//   {
+//     for(num>0;Math.floor(num/10);)
+//     {
+//       sum+=num
+//     }
+
+//   }
+//     return sum;
+// }
+// console.log(add(34))
