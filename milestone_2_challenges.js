@@ -11,7 +11,7 @@ function sumOfPositives(num) {
 }
 console.log(sumOfPositives([1, -3, -4, -6, 3]));
 
-//finding the maximam value in an array
+//2.finding the maximam value in an array
 
 function findMax(array){
     let great=[0]
@@ -29,4 +29,75 @@ function findMax(array){
 let list=[7,8,9,10];
 console.log(findMax(list))
 
-//election winner 
+//3.election winner 
+function findWinner(arrayOfOject){
+    let max=[0];
+    let i=0;
+    while(i<arrayOfOject.length){
+        if(arrayOfOject[i].votes>max.votes){
+            max=arrayOfOject[i]
+        }
+        i++;
+    }
+
+    return max;
+
+}
+let candidate= [
+  { name: "Alice", votes: 50 },
+  { name: "Bob", votes: 75 },
+  { name: "Charlie", votes: 65 }
+];
+
+console.log(findWinner(candidate))
+
+
+// 4.Longest word
+function findLongestWord(array){
+  let word=array[0];
+  let wrd=0;
+
+
+  for(wrd=0;wrd<array.length;wrd++)
+  {
+    if(array[wrd].length>=word.length )
+    {
+     word=array[wrd];
+    }
+
+  }
+  return word;
+
+}
+let wordList=["mark","maina","lulu","ann"]
+console.log(findLongestWord(wordList));
+
+//5.Count Properties that takes a object and returns the numer of properties
+
+
+//6 Filter by length
+
+
+
+
+//7 sum of even numbers
+
+
+//8.Difference between sum of even and odd
+
+//9.Count truthy
+
+//10.Average of numbers
+
+//11. Linear Search
+
+//12.Reverse Linear Search
+
+//13.linear search all indices
+
+//14 cOunt Occurrences
+
+
+//15.Remove Duplicates
+
+
