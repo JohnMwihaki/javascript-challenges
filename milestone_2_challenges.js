@@ -74,6 +74,18 @@ let words = ["cat", "giraffe", "hippo", "dog", "elephant"];
 console.log(filterByLength(words, 5));
 
 //7 sum of even numbers
+function sumOfEvenNumbers(numbers){
+  let sum=0;
+  for(let i=0;i<numbers.length;i++){
+    if(numbers[i]%2==0){
+      sum+=numbers[i];
+    }
+  }
+  return sum;
+
+}
+const num=[2,5,8,9,8]
+console.log(sumOfEvenNumbers(num));
 
 //8.Difference between sum of even and odd
 
