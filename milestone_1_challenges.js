@@ -106,7 +106,7 @@ function FizzBuzz(number) {
 }
 console.log(FizzBuzz(3));
 
-//10.Perimeter2 of circle and Squire
+//10.Perimeter2 of circle and Squire 
 function perimeter2(letter, num) {
   switch (letter) {
     case "s":
