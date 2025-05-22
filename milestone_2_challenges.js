@@ -107,6 +107,23 @@ console.log(DifferenceEvenOdd(difference));
 //9.Count truthy
 
 //10.Average of numbers
+function Average(units) {
+  let sum = 0;
+  let num = 0;
+  let average;
+  while (num < units.length) {
+    sum += units[num];
+    average = sum / units.length;
+
+    num++;
+  }
+
+  return {
+    sum,
+    average,
+  };
+}
+console.log(Average([3, 4, 5, 6, 7]));
 
 //11. Linear Search
 
@@ -114,6 +131,6 @@ console.log(DifferenceEvenOdd(difference));
 
 //13.linear search all indices
 
-//14 cOunt Occurrences
+//14 count Occurrences
 
 //15.Remove Duplicates
