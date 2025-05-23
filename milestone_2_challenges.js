@@ -138,8 +138,25 @@ function linerSearch(array,goal){
 }
 let numb=[1,2,3,4,4,5]
 console.log("Return: ",linerSearch(numb,6))
+console.log("Return: ",linerSearch(numb,5))
 
 //12.Reverse Linear Search
+function reverseLinerSearch(reverseArray,target){
+  for (let i=0;i<reverseArray.length;i++){
+    if(reverseArray[i]===target)
+    {
+      return reverseArray.lastIndexOf(reverseArray[i]);
+    }
+ 
+  }
+     return -1
+}
+let arrayList=[1,2,3,4,4,9]
+
+console.log("Return Index: ",reverseLinerSearch(arrayList,6))
+console.log("Return Index: ",reverseLinerSearch(arrayList,9))
+
+
 
 //13.linear search all indices
 
