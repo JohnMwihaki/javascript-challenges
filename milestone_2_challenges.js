@@ -126,6 +126,18 @@ function Average(units) {
 console.log(Average([3, 4, 5, 6, 7]));
 
 //11. Linear Search
+function linerSearch(array,goal){
+  for (let i=0;i<array.length;i++){
+    if(array[i]===goal)
+    {
+      return array[i];
+    }
+ 
+  }
+     return -1
+}
+let numb=[1,2,3,4,4,5]
+console.log("Return: ",linerSearch(numb,6))
 
 //12.Reverse Linear Search
 
