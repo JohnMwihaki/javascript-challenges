@@ -64,6 +64,17 @@ let wordList = ["mark", "maina", "lulu", "ann"];
 console.log(findLongestWord(wordList));
 
 //5.Count Properties that takes a object and returns the numer of properties
+function countProperties(arrayObjectKeys)
+{
+  return Object.keys(arrayObjectKeys)
+}
+let user = {
+  name: "kimani",
+  age: 18,
+  city: "Muranga"
+};
+
+console.log("Number of properties:", countProperties(user));
 
 //6 Filter by length
 
@@ -193,13 +204,13 @@ console.log(`Return indices:${linerSearchAll(linearAll, 12)}`);
 //15.Remove Duplicates
 function removeDuplicate(arrayDuplicate) {
   let notDuplicate = [];
-  let element={};  
+  let elementSeen={};  
 
   for(let i = 0; i < arrayDuplicate.length; i++) {
     let current = arrayDuplicate[i];
-    if (!element[current]) {    
+    if (!elementSeen[current]) {    
       notDuplicate.push(current);
-      element[current] = true;  
+      elementSeen[current] = true;  
     }
   }
 
