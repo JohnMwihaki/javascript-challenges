@@ -189,6 +189,24 @@ console.log(`Return indices:${linerSearchAll(linearAll, 12)}`);
 //14 count Occurrences
 
 
-//15.Remove Duplicates
 
-//1Most frequent
+//15.Remove Duplicates
+function removeDuplicate(arrayDuplicate) {
+  let notDuplicate = [];
+  let element={};  
+
+  for(let i = 0; i < arrayDuplicate.length; i++) {
+    let current = arrayDuplicate[i];
+    if (!element[current]) {    
+      notDuplicate.push(current);
+      element[current] = true;  
+    }
+  }
+
+  return notDuplicate;
+}
+
+let elements=[1,2,3,3,4,5,5,6,7,8,8]
+console.log("No Duplicate:", removeDuplicate(elements))
+
+//16.Most frequent
