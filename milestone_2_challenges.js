@@ -159,6 +159,22 @@ console.log("Return Index: ",reverseLinerSearch(arrayList,9))
 
 
 //13.linear search all indices
+function linerSearchAll(arrayAll,targetNum){
+  let indicesAll=[];
+  for (let i=0;i<arrayAll.length;i++){
+    if(arrayAll[i]===targetNum)
+    {
+      indicesAll.push(i);
+      return  indicesAll;
+    }
+ 
+  }
+     return  "[]"
+
+}
+let linearAll=[2,4,5,8,6,8]
+console.log(`Return indices:${linerSearchAll(linearAll,8)}`)
+console.log(`Return indices:${linerSearchAll(linearAll,12)}`)
 
 //14 count Occurrences
 
