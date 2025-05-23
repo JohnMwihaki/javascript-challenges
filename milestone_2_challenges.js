@@ -105,6 +105,21 @@ const difference = [2, 5, 8, 9, 8];
 console.log(DifferenceEvenOdd(difference));
 
 //9.Count truthy
+function countTruthy(obj){
+  let count=0;
+  let countValue=[];
+  for (let key in obj){
+    if(obj[key]){
+      count++;
+      countValue.push(obj[key])
+
+    }
+  }
+  console.log(countValue)
+  return count;
+}
+let objects={ a: 0, b: "hello", c: false, d: 42, e: null }
+console.log("Truth Count is:" ,countTruthy(objects));
 
 //10.Average of numbers
 function Average(units) {
@@ -126,56 +141,54 @@ function Average(units) {
 console.log(Average([3, 4, 5, 6, 7]));
 
 //11. Linear Search
-function linerSearch(array,goal){
-  for (let i=0;i<array.length;i++){
-    if(array[i]===goal)
-    {
+function linerSearch(array, goal) {
+  for (let i = 0; i < array.length; i++) {
+    if (array[i] === goal) {
       return array[i];
     }
- 
   }
-     return -1
+  return -1;
 }
-let numb=[1,2,3,4,4,5]
-console.log("Return: ",linerSearch(numb,6))
-console.log("Return: ",linerSearch(numb,5))
+let numb = [1, 2, 3, 4, 4, 5];
+console.log("Return: ", linerSearch(numb, 6));
+console.log("Return: ", linerSearch(numb, 5));
 
 //12.Reverse Linear Search
-function reverseLinerSearch(reverseArray,target){
-  for (let i=0;i<reverseArray.length;i++){
-    if(reverseArray[i]===target)
-    {
+function reverseLinerSearch(reverseArray, target) {
+  for (let i = 0; i < reverseArray.length; i++) {
+    if (reverseArray[i] === target) {
       return reverseArray.lastIndexOf(reverseArray[i]);
     }
- 
   }
-     return -1
+  return -1;
 }
-let arrayList=[1,2,3,4,4,9]
+let arrayList = [1, 2, 3, 4, 4, 9];
 
-console.log("Return Index: ",reverseLinerSearch(arrayList,6))
-console.log("Return Index: ",reverseLinerSearch(arrayList,9))
-
-
+console.log("Return Index: ", reverseLinerSearch(arrayList, 6));
+console.log("Return Index: ", reverseLinerSearch(arrayList, 9));
 
 //13.linear search all indices
-function linerSearchAll(arrayAll,targetNum){
-  let indicesAll=[];
-  for (let i=0;i<arrayAll.length;i++){
-    if(arrayAll[i]===targetNum)
-    {
+function linerSearchAll(arrayAll, targetNum) {
+  let indicesAll = [];
+  for (let i = 0; i < arrayAll.length; i++) {
+    if (arrayAll[i] === targetNum) {
       indicesAll.push(i);
-      return  indicesAll;
     }
- 
   }
-     return  "[]"
 
+  if (indicesAll.length > 0) {
+    return indicesAll;
+  } else {
+    return "[]";
+  }
 }
-let linearAll=[2,4,5,8,6,8]
-console.log(`Return indices:${linerSearchAll(linearAll,8)}`)
-console.log(`Return indices:${linerSearchAll(linearAll,12)}`)
+let linearAll = [2, 4, 5, 8, 6, 8];
+console.log(`Return indices:${linerSearchAll(linearAll, 8)}`);
+console.log(`Return indices:${linerSearchAll(linearAll, 12)}`);
 
 //14 count Occurrences
 
+
 //15.Remove Duplicates
+
+//1Most frequent
