@@ -2,14 +2,18 @@
   "name": "milestone_1_challenges",
   "private": true,
   "version": "0.0.0",
-  "type": "module",
+   "type": "commonjs",
+
   "scripts": {
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview"
   },
   "devDependencies": {
+    "@types/node": "^22.15.29",
     "prettier": "^3.5.3",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.8.3",
     "vite": "^6.3.5"
   }
 }
