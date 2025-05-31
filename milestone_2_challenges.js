@@ -66,7 +66,7 @@ console.log(findLongestWord(wordList));
 //5.Count Properties that takes a object and returns the numer of properties
 function countProperties(arrayObjectKeys)
 {
-  return Object.keys(arrayObjectKeys)
+  return Object.keys(arrayObjectKeys).length
 }
 let user = {
   name: "kimani",
