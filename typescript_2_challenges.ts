@@ -112,6 +112,27 @@ let numberlist: number[] = [3, 5, 6, 9, 10];
 console.log(differenceOfEvenOdd(numberlist));
 
 //9:Count Truthy
+function countTruth(obj: any): number {
+  let countvalue: string | number[] = [];
+  let count: number = 0;
+  for (let key in obj) {
+    if (obj[key]) {
+      count++;
+      countvalue.push(obj[key]);
+    }
+  }
+  console.log(countvalue);
+  return count;
+}
+let truthlist = {
+  a: 0,
+  b: "hello",
+  c: false,
+  d: 42,
+  e: null,
+};
+
+console.log(countTruth(truthlist));
 
 //10:Average of Numbers
 function average(avg: number[]): number {
